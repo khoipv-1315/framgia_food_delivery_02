@@ -1,0 +1,13 @@
+<div class="container text-center">
+  <div class="logo-404">
+    <%= link_to("index.html") do %>
+      <%= image_tag("home/logo.png", alt: "logo") %>
+    <% end %>
+  </div>
+  <div class="content-404">
+    <%= image_tag("404/404.png", class: "img-responsive", alt: "404") %>
+    <h1><b>OPPS!</b> We Couldn’t Find this Page</h1>
+    <p>Uh... So it looks like you brock something. The page you are looking for has up and Vanished.</p>
+    <h2><%= link_to("Back Home", "index.html") %></h2>
+  </div>
+</div>
