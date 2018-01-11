@@ -1,0 +1,147 @@
+<header id="header"><!--header-->
+  <div class="header_top"><!--header_top-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="contactinfo">
+            <ul class="nav nav-pills">
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-phone">+2 95 01 88 821</i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-envelope">info@domain.com</i>
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="social-icons pull-right">
+            <ul class="nav navbar-nav">
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-facebook"></i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-twitter"></i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-linkedin"></i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-dribbble"></i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-google-plus"></i>
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/header_top-->
+  
+  <div class="header-middle"><!--header-middle-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="logo pull-left">
+            <a href="index.html"><%= image_tag("home/logo.png", :alt => "logo") %>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="shop-menu pull-right">
+            <ul class="nav navbar-nav">
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-user">Account</i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-star">Wishlist</i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-crosshairs">Checkout</i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("#") do %>
+                  <i class= "fa fa-shopping-cart">Cart</i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to("login.html") do %>
+                  <i class= "fa fa-lock">Login</i>
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/header-middle-->
+
+  <div class="header-bottom"><!--header-bottom-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="mainmenu pull-left">
+            <ul class="nav navbar-nav collapse navbar-collapse">
+              <li><%= link_to("Home", "index.html") %></li>
+              <li><%= link_to("shop.html", class: "dropdown") do %>
+                  Shop<i class= "fa fa-angle-down"></i>
+                <% end %>
+                <ul role="menu" class="sub-menu">
+                  <li><%= link_to("Products", "shop.html") %></li>
+                  <li><%= link_to("BProduct Details", "product-details.html") %></li> 
+                  <li><%= link_to("Checkout", "checkout.html") %></li> 
+                  <li><%= link_to("Cart", "cart.html") %></li> 
+                  <li><%= link_to("Login", "login.html") %></li> 
+                </ul>
+              </li> 
+              <li class="dropdown">
+                <%= link_to("blog.html") do %>
+                  Blog<i class= "fa fa-angle-down"></i>
+                <% end %>
+                <ul role="menu" class="sub-menu">
+                  <li><%= link_to("Blog List", "blog.html") %></li>
+                  <li><%= link_to("Blog Single", "blog-single.html") %></li>
+                </ul>
+              </li> 
+              <li><%= link_to("404", error_path) %></li>
+              <li><%= link_to("Contact", contact_path , class: "active") %></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="search_box pull-right">
+            <input type="text" placeholder="Search"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/header-bottom-->
+</header><!--/header-->

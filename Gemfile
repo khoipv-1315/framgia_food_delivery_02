@@ -11,6 +11,8 @@ source "https://rubygems.org"
   gem 'turbolinks', '~> 5'
   gem 'jbuilder', '~> 2.5'
   gem 'rake', '~> 12.3.0'
+  gem 'font-awesome-sass', "4.7.0"
+  gem 'jquery-rails', "4.3.1"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
