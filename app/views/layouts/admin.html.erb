@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>SB Admin - Bootstrap Admin Template</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <%= render "admin/layouts/top" %>
+      <div id="page-wrapper">
+        <%= yield %>
+      </div>
+      <%= render "admin/layouts/footer" %>
+    </div>
+
+  </body>
+
+</html>

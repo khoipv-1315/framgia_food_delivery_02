@@ -1,0 +1,108 @@
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><%= t ".title_framgia" %></a>
+  </div>
+  <!-- Top Menu Items -->
+  <ul class="nav navbar-right top-nav">
+    <li class="dropdown">
+      <%= link_to "#", class: "dropdown-toggle", :data => {:toggle => "dropdown"} do %>
+        <i class="fa fa-bell"></i><b class="caret"></b>
+      <% end %>
+      <ul class="dropdown-menu message-dropdown">
+        <li class="message-preview">
+          <%= link_to "#", class: "dropdown-toggle", :data => {:toggle => "dropdown"} do %>
+            <div class="media">
+              <span class="pull-left">
+                <%= image_tag "http://placehold.it/50x50", class: "media-object", alt: "" %>
+              </span>
+              <div class="media-body">
+                <h5 class="media-heading"><strong>John Smith</strong>
+                </h5>
+                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+              </div>
+            </div>
+          <% end %>
+          <%= link_to "#", class: "dropdown-toggle", :data => {:toggle => "dropdown"} do %>
+            <div class="media">
+              <span class="pull-left">
+                <%= image_tag "http://placehold.it/50x50", class: "media-object", alt: "" %>
+              </span>
+              <div class="media-body">
+                <h5 class="media-heading"><strong>John Smith</strong>
+                </h5>
+                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+              </div>
+            </div>
+          <% end %>
+        </li>
+        <li class="message-preview">
+          <%= link_to "#", class: "dropdown-toggle", :data => {:toggle => "dropdown"} do %>
+            <div class="media">
+              <span class="pull-left">
+                <%= image_tag "http://placehold.it/50x50", class: "media-object", alt: "" %>
+              </span>
+              <div class="media-body">
+                <h5 class="media-heading"><strong>John Smith</strong>
+                </h5>
+                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+              </div>
+            </div>
+          <% end %>
+        </li>
+        <li class="message-preview">
+          <%= link_to "#", class: "dropdown-toggle", :data => {:toggle => "dropdown"} do %>
+            <div class="media">
+              <span class="pull-left">
+                <%= image_tag "http://placehold.it/50x50", class: "media-object", alt: "" %>
+              </span>
+              <div class="media-body">
+                <h5 class="media-heading"><strong>John Smith</strong>
+                </h5>
+                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+              </div>
+            </div>
+          <% end %>
+        </li>
+        <li class="message-footer">
+          <a href="#"><%= t ".all_messages" %></a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li>
+          <%= link_to "#" do %>
+            <i class="fa fa-user"><%= t ".profile" %></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "#" do %>
+            <i class="fa fa-gear"><%= t ".settings" %></i>
+          <% end %>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <%= link_to "#" do %>
+            <i class="fa fa-power-off"><%= t ".logout" %></i>
+          <% end %>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+  <%= render "admin/layouts/menu" %>
+  <!-- /.navbar-collapse -->
+</nav>
