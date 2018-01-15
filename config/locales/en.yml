@@ -30,4 +30,31 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  admin:
+    dashboard:
+      index:
+        dashboard: "Dashboard"
+        view_details: "View Details"
+        total_user: "Total User"
+        total_food: "Total Food"
+        new_order: "New Order"
+        today_order: "Today Order"
+        today_review: "Today Review"
+    layouts:
+      top:
+        title_framgia: "Framgia Food Delivery"
+        all_messages: "Read All New Messages"
+        profile: "Profile"
+        settings: "Settings"
+        logout: "Log Out"
+      menu:
+        dashboard: "Dashboard"
+        user: "User"
+        add_user: "Add User"
+        list_user: "list User"
+        food: "Food"
+        order: "Order"
+        discount: "Discount"
+        review: "Review"
+          
+
