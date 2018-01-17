@@ -56,5 +56,12 @@ en:
         order: "Order"
         discount: "Discount"
         review: "Review"
-          
-
+  sessions:
+    new:
+      login_your_account: "Login to your account"        
+      login: "Login"
+      register: "Register"
+  users:
+    new:
+      logout: "Logout"
+      register: "Register"
