@@ -1,32 +1,34 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse">
   <ul class="nav navbar-nav side-nav">
-    <li class="active">
-      <%= link_to "index.html" do %>
+    <li>
+      <%= link_to admin_root_path do %>
         <i class="fa fa-fw fa-dashboard"></i><%= t ".dashboard" %>
       <% end %>
     </li>
     <li>
-      <%= link_to "javascript:;", :data => {:toggle => "collapse", :target => "#demo"} do %>
-        <i class="fa fa-fw fa-user-o"></i><%= t ".user" %><i class="fa fa-fw fa-caret-down"></i>
+      <%= link_to admin_users_path do %>
+        <i class="fa fa-fw fa-user-o"></i><%= t ".user" %>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to "javascript:;", :data => {:toggle => "collapse", 
+        :target => "#demo"} do %>
+        <i class="fa fa-fw fa-cutlery"></i><%= t ".food" %>
+        <i class="fa fa-fw fa-caret-down"></i>
       <% end %>
       <ul id="demo" class="collapse">
         <li>
-          <%= link_to "tables.html" do %>
-            <%= t ".add_user" %>
+          <%= link_to "#" do %>
+            <%= t ".list_food" %>
           <% end %>
         </li>
         <li>
-          <%= link_to "tables.html" do %>
-            <%= t ".add_user" %>
+          <%= link_to "#" do %>
+            <%= t ".add_food" %>
           <% end %>
         </li>
       </ul>
-    </li>
-    <li>
-      <%= link_to "tables.html" do %>
-        <i class="fa fa-fw fa-table"></i><%= t ".food" %>
-      <% end %>
-    </li>
+    </li>    
     <li>
       <%= link_to "forms.html" do %>
         <i class="fa fa-fw fa-edit"></i><%= t ".order" %>
@@ -34,12 +36,12 @@
     </li>
     <li>
       <%= link_to "forms.html" do %>
-        <i class="fa fa-fw fa-desktop"></i><%= t ".discount" %>
+        <i class="fa fa-fw fa-caret-square-o-down"></i><%= t ".discount" %>
       <% end %>
     </li>
     <li>
       <%= link_to "forms.html" do %>
-        <i class="fa fa-fw fa-wrench"></i><%= t ".review" %>
+        <i class="fa fa-fw fa-comment-o"></i><%= t ".review" %>
       <% end %>
     </li>
   </ul>

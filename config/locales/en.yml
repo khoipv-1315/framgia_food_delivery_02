@@ -50,12 +50,38 @@ en:
       menu:
         dashboard: "Dashboard"
         user: "User"
-        add_user: "Add User"
-        list_user: "list User"
+        add_food: "Add Food"
+        list_food: "list Food"
         food: "Food"
         order: "Order"
         discount: "Discount"
         review: "Review"
+    users:
+      index:
+        list: "List User"
+        _id: "ID"
+        name: "Name"
+        email: "Email"
+        admin: "Admin"
+        avatar: "Avatar"
+        phone: "Phone"
+        address: "Address"
+        nothing: "nothing"
+      _user:
+        confirm_delete: "You sure?"
+        admin: "Admin"
+        customer: "Customer"
+      new:
+        add: "Add"
+        add_user: "Add User"
+        name: "Name"
+        add_name: "add name"
+        add_email: "add email"
+        admin: "Admin"
+        add_admin: "add admin"
+      user_controller:
+        success: "success"
+        failed: "failed"  
   sessions:
     new:
       login_your_account: "Login to your account"        
@@ -65,3 +91,10 @@ en:
     new:
       logout: "Logout"
       register: "Register"
+  layouts:
+    _header:
+      login: "Login"
+      logout: :"Logout"
+      cart: "Cart"
+      profile: "Profile"
+      wishlist: "Wishlist"

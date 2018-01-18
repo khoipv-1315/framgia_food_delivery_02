@@ -1,0 +1,17 @@
+<tr>
+  <td class="text-center"><%= user.id %></td>
+  <td class="text-center"><%= user.name %></td>
+  <td class="text-center"><%= user.email %></td>
+  <td class="text-center"><%= user.admin ? t("admin.users._user.admin")
+   : t("admin.users._user.customer") %></td>
+  <td class="text-center"><%= user.avatar %></td>
+  <td class="text-center"><%= user.phone %></td>
+  <td class="text-center"><%= user.address %></td>
+  <td class="text-center">
+    <%= link_to admin_user_path(user), method: :delete,
+      class: "mike-action mike-action-delete",
+      data: {confirm: t("admin.users._user.confirm_delete")} do %>
+      <i class="fa fa-times"></i>
+    <% end %>
+  </td>
+</tr>

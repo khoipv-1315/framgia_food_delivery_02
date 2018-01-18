@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   get "error" => "customers/static_pages#error"
   namespace :admin do
     root "dashboard#index"
+
+    resources :users
   end
 end
