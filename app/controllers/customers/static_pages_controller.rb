@@ -1,4 +1,7 @@
 class Customers::StaticPagesController < ApplicationController
-  def contact
-  end
+  skip_before_action :require_login
+
+  def contact; end
+
+  def error; end
 end
