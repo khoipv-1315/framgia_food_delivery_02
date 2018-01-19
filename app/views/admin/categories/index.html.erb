@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header"><%= t ".list" %></h1>
+  </div>
+  <div class="col-lg-12">
+    <%= link_to new_admin_category_path, class: "btn btn-primary" do %>
+      <span class="glyphicon glyphicon-plus-sign"></span>
+      <%= t "add_category" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <%= t "admin.users.index.list" %>
+      </div>
+      <div class="panel-body">
+        <table width="100%"
+          class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th class="text-center"><%= t "._id" %></th>
+              <th class="text-center"><%= t ".name" %></th>
+              <th class="text-center"><%= t ".status" %></th>
+              <th class="text-center"><%= t ".description" %></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <% if @categories.index.any? %>
+          <%= render @categories %>
+          <% else %>
+            <tr>
+              <td colspan="4" class="text-center">
+                <%= t "admin.users.index.nothing" %>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+        <div>
+          <%= will_paginate %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

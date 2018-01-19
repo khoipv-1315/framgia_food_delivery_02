@@ -1,0 +1,21 @@
+<tr>
+  <td class="text-center"><%= category.id %></td>
+  <td class="text-center"><%= category.name %></td>
+  <td class="text-center"><%= category.status ? 
+    t("admin.categories._categories.active")
+    : t("admin.categories._categories.pending") %></td>
+  <td class="text-center"><%= category.description %></td>
+  <td class="text-center">
+    <%= link_to edit_admin_category_path(category),
+      class: "mike-action mike-action-edit" do %>
+      <i class="fa fa-pencil"></i>
+    <% end %>
+  </td>
+  <td class="text-center">
+    <%= link_to admin_category_path(category), method: :delete,
+      class: "mike-action mike-action-delete",
+      data: {confirm: t("admin.users._user.confirm_delete")} do %>
+      <i class="fa fa-times"></i>
+    <% end %>
+  </td>
+</tr>
