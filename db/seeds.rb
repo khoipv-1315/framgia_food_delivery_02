@@ -24,3 +24,19 @@ User.create!([{
   phone: "01234567889",
   address: "Hà Nội"
 }])
+
+Category.create!([{
+  name: "Bữa Trưa",
+  status: true,
+  description: "Bữa trưa Bữa trưa ăn ngon"
+},
+{
+  name: "Bữa Tối",
+  status: true,
+  description: "Bữa trưa Bữa trưa ăn ngon"
+},
+{
+  name: "Món Vặt",
+  status: true,
+  description: "Bữa trưa Bữa trưa ăn ngon"
+}])

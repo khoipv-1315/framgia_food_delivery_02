@@ -31,6 +31,30 @@
 
 en:
   admin:
+    categories:
+      edit:
+        edit: "Edit"
+        edit_category: "Edit category"
+      new:
+        add: "Add"
+        categories: "Categories"
+      _form:
+        name: "Name"
+        status: "Status"
+        description: "Description"
+        add: "Add"
+      _category:
+      index:
+        _id: "ID"
+        list: "List"
+        name: "Name"
+        status: "Status"
+        description: "Description"
+        add_category: "Add category"
+      category_controller:
+        success: "success"
+        failed: "failed"
+        id_blank: "id blank"
     dashboard:
       index:
         dashboard: "Dashboard"

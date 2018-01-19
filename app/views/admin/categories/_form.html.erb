@@ -1,0 +1,25 @@
+<%= form_for [:admin, @category], html: {class: "form-horizontal"} do |f| %>
+  <div class="form-group">
+    <%= f.label :name, t(".name"), class: "col-md-2 control-label" %>
+    <div class="col-md-6">
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :status, t(".status"), class: "col-md-2 control-label" %>
+    <div class="col-md-6">
+      <%= f.check_box :status %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :description, t(".description"), class: "col-md-2 control-label" %>
+    <div class="col-md-6">
+      <%= f.text_area :description, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-4">
+      <%= f.submit t("admin.categories._form.add"), class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
