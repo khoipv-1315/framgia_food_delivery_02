@@ -31,6 +31,35 @@
 
 en:
   admin:
+    discounts:
+      find_discount:
+        id_blank: "id blank"
+      update:
+        success: "success"
+        failed: "failed"
+      create:
+        success: "success"
+        failed: "failed"
+      destroy:
+        success: "success"
+        failed: "failed"
+      new:
+        discount: "Discount"
+        add: "Add"
+      _form:
+        discount: "Discount"
+        start_date: "Start Date"
+        end_date: "End Date"
+        add: "Add"
+        date: "Date"
+      index:
+        discount: "Discount"
+      edit:
+        edit_discount: "Edit discount"
+        edit: "Edit"
+      discount_controller:
+        success: "success"
+        failed: "failed"
     categories:
       edit:
         edit: "Edit"
