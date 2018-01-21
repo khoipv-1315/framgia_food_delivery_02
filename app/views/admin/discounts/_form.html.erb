@@ -1,0 +1,26 @@
+<%= form_for [:admin, @discount], html: {class: "form-horizontal"} do |f| %>
+  <div class="form-group">
+    <%= f.label :discount, t(".discount"), class: "col-md-3 control-label" %>
+    <div class="col-md-6">
+      <%= f.text_field :discount, class: "form-control text-center", 
+      placeholder: "%" %>
+    </div>
+  </div>
+  <div class="form-group input-daterange">
+    <%= f.label :start_date, t(".start_date"), class: "col-md-3 control-label" %>
+    <div class="col-md-6">
+      <%= f.text_field :start_date, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group input-daterange">
+    <%= f.label :end_date, t(".end_date"), class: "col-md-3 control-label" %>
+    <div class="col-md-6">
+      <%= f.text_field :end_date, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-4">
+      <%= f.submit t("admin.discounts._form.add"), class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

@@ -34,7 +34,7 @@ class Admin::CategoriesController < Admin::BaseController
   end
 
   def destroy
-    category = Category.find_by params[:id]
+    category = Category.find_by id: params[:id]
     if !category
       flash[:warning] = t "admin.categories.category_controller.id_blank"
     elsif category.destroy
@@ -52,7 +52,7 @@ class Admin::CategoriesController < Admin::BaseController
   end
 
   def find_category
-    @category = Category.find_by params[:id]
+    @category = Category.find_by id: params[:id]
     unless @category
       flash[:warning] = t "admin.categories.category_controller.id_blank"
     end
