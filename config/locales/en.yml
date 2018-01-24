@@ -31,6 +31,33 @@
 
 en:
   admin:
+    foods:
+      index:
+        _id: "ID"
+        name: "Name"
+        image: "Image"
+        price: "Price"
+        discount: "Discount"
+        category: "Category"
+        active: "Active"
+        description: "Description"
+        is_top: "Top"
+      _food:
+        actived: "Actived"
+        pending: "Pending"
+        yes: "Yes"
+        no: "No"
+      new:
+        foods: "Foods"
+      update:
+        success: "success"
+        failed: "failed"
+      create:
+        success: "success"
+        failed: "failed"
+      destroy:
+        success: "success"
+        failed: "failed"
     discounts:
       find_discount:
         id_blank: "id blank"

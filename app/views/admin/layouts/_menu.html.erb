@@ -23,12 +23,12 @@
       <% end %>
       <ul id="demo" class="collapse">
         <li>
-          <%= link_to "#" do %>
+          <%= link_to admin_foods_path do %>
             <%= t ".list_food" %>
           <% end %>
         </li>
         <li>
-          <%= link_to "#" do %>
+          <%= link_to new_admin_food_path do %>
             <%= t ".add_food" %>
           <% end %>
         </li>
@@ -40,7 +40,7 @@
       <% end %>
     </li>
     <li>
-      <%= link_to "forms.html" do %>
+      <%= link_to admin_discounts_path do %>
         <i class="fa fa-fw fa-caret-square-o-down"></i><%= t ".discount" %>
       <% end %>
     </li>

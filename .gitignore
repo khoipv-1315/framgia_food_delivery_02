@@ -27,3 +27,5 @@
 
 /.framgia-ci-reports/
 /.framgia-ci-result.temp.yml
+
+public/uploads

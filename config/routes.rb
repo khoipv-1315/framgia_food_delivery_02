@@ -13,5 +13,6 @@ Rails.application.routes.draw do
     resources :users
     resources :categories
     resources :discounts
+    resources :foods
   end
 end
