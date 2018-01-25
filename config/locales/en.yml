@@ -30,6 +30,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  customers:
+    home:
+      category_tab:
+        add_to_cart: Add to cart
+  number:
+    currency:
+      format:
+        format: "%n %u"
+        unit: "vnd"
+        delimiter: "."
+        significant: "false"
   admin:
     foods:
       index:
@@ -178,3 +189,6 @@ en:
       cart: "Cart"
       profile: "Profile"
       wishlist: "Wishlist"
+      home: "Home"
+      blog: "Blog"
+      contact: "Contact"

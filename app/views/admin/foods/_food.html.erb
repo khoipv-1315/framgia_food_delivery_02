@@ -4,8 +4,8 @@
   <td class="text-center"><%= link_to(image_tag(food.image.thumb.url, 
     alt: 'Image'), food.image.url, target: '_blank') %></td>
   <td class="text-center"><%= food.price %></td>
-  <td class="text-center"><%= food.discount_id %></td>
-  <td class="text-center"><%= food.category_id %></td>
+  <td class="text-center"><%= food.discount.discount %></td>
+  <td class="text-center"><%= food.category.name %></td>
   <td class="text-center"><%= food.actived ? 
     t("admin.foods._foods.active")
     : t("admin.foods._foods.pending") %></td>

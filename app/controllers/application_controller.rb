@@ -8,4 +8,9 @@ class ApplicationController < ActionController::Base
   def require_login
     redirect_to login_path unless logged_in?
   end
+
+  def number_to_currency number, options = {}
+    options[:locale] ||= I18n.locale
+    super number, options
+  end
 end 

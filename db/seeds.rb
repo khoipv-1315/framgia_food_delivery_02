@@ -40,3 +40,19 @@ Category.create!([{
   status: true,
   description: "Bữa trưa Bữa trưa ăn ngon"
 }])
+
+Discount.create!([{
+  discount: "0",
+  start_date: "2011-04-24",
+  description: "2030-04-24"
+},
+{
+  discount: "10",
+  start_date: "2017-04-24",
+  description: "2018-04-24"
+},
+{
+  discount: "20",
+  start_date: "2018-04-24",
+  description: "2018-04-25"
+}])

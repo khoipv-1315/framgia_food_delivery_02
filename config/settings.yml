@@ -1,0 +1,4 @@
+home:
+  index:
+    limit: "12"
+    one: "1"
